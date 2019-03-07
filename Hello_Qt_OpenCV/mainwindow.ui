@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>521</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="topHorizontalLayout">
+     <item>
+      <widget class="QLabel" name="inputLabel">
+       <property name="text">
+        <string>Input Image:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inputLineEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="inputPushButton">
+       <property name="text">
+        <string>Brower</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="filterTypeGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>521</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Filter Type</string>
+    </property>
+    <widget class="QRadioButton" name="medianBlurRadioButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>89</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Median Blur</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="gaussianBlurRradioButton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>40</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gaussion Blur</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>521</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="bottomHorizontalLayout">
+     <item>
+      <widget class="QLabel" name="outputLabel">
+       <property name="text">
+        <string>Output Image:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputLineEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="outputPushButton">
+       <property name="text">
+        <string>Brower</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QCheckBox" name="displayImageCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display image after saving</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
