@@ -1,0 +1,105 @@
+
+win32:CONFIG(release, debug|release): {
+    LIBS += -LF:/libs/opencv/OpenCV4/install/x64/vc14/lib/ \
+           -lopencv_aruco410 \
+           -lopencv_bgsegm410 \
+           -lopencv_bioinspired410 \
+           -lopencv_calib3d410 \
+           -lopencv_ccalib410 \
+           -lopencv_core410 \
+           -lopencv_datasets410 \
+           -lopencv_dnn410 \
+           -lopencv_dnn_objdetect410 \
+           -lopencv_dpm410 \
+           -lopencv_face410 \
+           -lopencv_features2d410 \
+           -lopencv_flann410 \
+           -lopencv_fuzzy410 \
+           -lopencv_gapi410 \
+           -lopencv_hfs410 \
+           -lopencv_highgui410 \
+           -lopencv_imgcodecs410 \
+           -lopencv_imgproc410 \
+           -lopencv_img_hash410 \
+           -lopencv_line_descriptor410 \
+           -lopencv_ml410 \
+           -lopencv_objdetect410 \
+           -lopencv_optflow410 \
+           -lopencv_phase_unwrapping410 \
+           -lopencv_photo410 \
+           -lopencv_plot410 \
+           -lopencv_quality410 \
+           -lopencv_reg410 \
+           -lopencv_rgbd410 \
+           -lopencv_saliency410 \
+           -lopencv_shape410 \
+           -lopencv_stereo410 \
+           -lopencv_stitching410 \
+           -lopencv_structured_light410 \
+           -lopencv_superres410 \
+           -lopencv_surface_matching410 \
+           -lopencv_text410 \
+           -lopencv_tracking410 \
+           -lopencv_video410 \
+           -lopencv_videoio410 \
+           -lopencv_videostab410 \
+           -lopencv_viz410 \
+           -lopencv_xfeatures2d410 \
+           -lopencv_ximgproc410 \
+           -lopencv_xobjdetect410 \
+           -lopencv_xphoto410 \
+
+}
+else:win32:CONFIG(debug, debug|release):{
+    LIBS += -LF:/libs/opencv/OpenCV4/install/x64/vc14/lib/ \
+            -lopencv_aruco410d \
+            -lopencv_bgsegm410d \
+            -lopencv_bioinspired410d \
+            -lopencv_calib3d410d \
+            -lopencv_ccalib410d \
+            -lopencv_core410d \
+            -lopencv_datasets410d \
+            -lopencv_dnn410d \
+            -lopencv_dnn_objdetect410d \
+            -lopencv_dpm410d \
+            -lopencv_face410d \
+            -lopencv_features2d410d \
+            -lopencv_flann410d \
+            -lopencv_fuzzy410d \
+            -lopencv_gapi410d \
+            -lopencv_hfs410d \
+            -lopencv_highgui410d \
+            -lopencv_imgcodecs410d \
+            -lopencv_imgproc410d \
+            -lopencv_img_hash410d \
+            -lopencv_line_descriptor410d \
+            -lopencv_ml410d \
+            -lopencv_objdetect410d \
+            -lopencv_optflow410d \
+            -lopencv_phase_unwrapping410d \
+            -lopencv_photo410d \
+            -lopencv_plot410d \
+            -lopencv_quality410d \
+            -lopencv_reg410d \
+            -lopencv_rgbd410d \
+            -lopencv_saliency410d \
+            -lopencv_shape410d \
+            -lopencv_stereo410d \
+            -lopencv_stitching410d \
+            -lopencv_structured_light410d \
+            -lopencv_superres410d \
+            -lopencv_surface_matching410d \
+            -lopencv_text410d \
+            -lopencv_tracking410d \
+            -lopencv_video410d \
+            -lopencv_videoio410d \
+            -lopencv_videostab410d \
+            -lopencv_viz410d \
+            -lopencv_xfeatures2d410d \
+            -lopencv_ximgproc410d \
+            -lopencv_xobjdetect410d \
+            -lopencv_xphoto410d \
+}
+INCLUDEPATH += F:/libs/opencv/OpenCV4/install/include \
+            += F:/libs/opencv/OpenCV4/install/include/opencv \
+            += F:/libs/opencv/OpenCV4/install/include/opencv2
